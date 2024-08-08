@@ -1,0 +1,1 @@
+Operaciones abiertas + operaciones cerradas
