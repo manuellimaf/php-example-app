@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 class PortfolioController extends Controller
 {
     function getSummary() {
-        return view('portfolio.summary', []);        
+        return view('portfolio.summary');
     }
 
     function getOperations() {
-        return view('portfolio.operations', []);        
+        return view('portfolio.operations');
     }
 
 }

@@ -11,7 +11,8 @@ class StockCurrentPrice extends Model
 
     protected $fillable = [
         'ticker',
-        'price'
+        'price',
+        'priceDate'
     ];
 
 }

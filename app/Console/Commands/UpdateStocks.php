@@ -25,6 +25,8 @@ class UpdateStocks extends Command
      */
     public function handle()
     {
+
+//    a. Tomar vía API cotizaciones de activos
         return $this->comment('Updated!');
     }
 }
