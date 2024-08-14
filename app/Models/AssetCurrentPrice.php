@@ -9,6 +9,8 @@ class AssetCurrentPrice extends Model {
     
     use HasFactory;
 
+    protected $table = 'asset_current_price';
+
     protected $fillable = [
         'ticker',
         'price',
