@@ -15,12 +15,14 @@ class WorkInProgress {
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
     public function handle(Request $request, Closure $next): Response {
-        // Log::debug("Request URI: $request->path()");
+        /*
+        Log::debug("Request URI: $request->path()");
 
-        if ($request->is('portfolio*')) {
+        if ($request->is('portfolio/*')) {
             return redirect('wip');
         }
-
+        */
+        
         return $next($request);
     }
 }
