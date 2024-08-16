@@ -13,6 +13,7 @@ return new class extends Migration
             $table->string('ticker')->primary();
             $table->string('description');
             $table->enum('asset_type', ['Bond', 'ON', 'Stock']);
+            $table->timestamps();
         });
 
         Schema::create('asset_current_price', function (Blueprint $table) {
@@ -20,6 +21,7 @@ return new class extends Migration
             $table->string('ticker');
             $table->float('price');
             $table->timestamp('price_date');
+            $table->timestamps();
 
             $table->foreign('ticker')->references('ticker')->on('asset');
         });
@@ -34,6 +36,7 @@ return new class extends Migration
             $table->timestamp('sell_date')->nullable();
             $table->integer('quantity');
             $table->float('tax');
+            $table->timestamps();
 
             $table->foreign('ticker')->references('ticker')->on('asset');
         });

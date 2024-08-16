@@ -10,15 +10,16 @@ class Operation extends Model
     use HasFactory;
 
     protected $table = 'operation';
+    public $timestamps = false;
 
     protected $fillable = [
         'ticker',
         'quantity',
-        'operationType',
-        'buyPrice',
-        'buyDate',
-        'sellPrice',
-        'sellDate',
+        'operation_type',
+        'buy_price',
+        'buy_date',
+        'sell_price',
+        'sell_date',
         'tax',
     ];
 
